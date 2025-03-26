@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$SNOWDEN NFTs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            width: 250px;
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px;
+            position: fixed;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .sidebar .logo h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .sidebar nav ul {
+            list-style: none;
+        }
+
+        .sidebar nav ul li {
+            margin: 15px 0;
+        }
+
+        .sidebar nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .sidebar nav ul li a:hover {
+            color: #00aaff;
+        }
+
+        /* Main Content Styling */
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+            flex: 1;
+        }
+
+        /* Hero Section Styling */
+        .hero-section {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .hero-image {
+            position: relative;
+            max-height: 300px; /* Limit the height of the hero section */
+            overflow: hidden;
+        }
+
+        .hero-kaspa-image {
+            width: 100%;
+            height: 300px; /* Fixed height for consistency */
+            object-fit: cover; /* Ensure the image scales properly */
+            display: block;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        /* NFT Section Styling */
+        .nft-section {
+            margin-bottom: 40px;
+        }
+
+        .nft-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+            gap: 20px;
+            padding: 0 10px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover; /* Ensure the image scales properly */
+            border-radius: 5px;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Details Section Styling */
+        .details-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .details-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .details-section p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .details-section .note {
+            font-style: italic;
+            color: #888;
+            margin-top: 10px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-content p {
+            margin-bottom: 10px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+        }
+
+        .social-links img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 200px;
+            }
+
+            .main-content {
+                margin-left: 200px;
+            }
+
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+
+            .hero-kaspa-image {
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                position: static;
+                height: auto;
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+
+            .hero-text h1 {
+                font-size: 1.5rem;
+            }
+
+            .hero-kaspa-image {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <div class="logo">
+            <h2>𝕄𝕠𝕕𝕄𝕖𝕕𝕚𝕒 ℕ𝕖𝕥𝕨𝕠𝕣𝕜™</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="new-american-republic.html">New American Republic PAC</a></li>
+                <li><a href="snowden.html">Snowden</a></li>
+                <li><a href="snowden-nfts.html">$SNOWDEN NFTs</a></li>
+                <li><a href="jimmy-carter-eulogy.html">Jimmy Carter Eulogy</a></li>
+                <li><a href="mainstream-news.html">Mainstream News Feeds are propaganda</a></li>
+                <li><a href="fair-love-sport.html">Is All Fair in Love & Sport?</a></li>
+                <li><a href="kaspa-future-economy.html">Kaspa - The Future of Economy?</a></li>
+                <li><a href="big-tech-censorship.html">Big Tech Censorship</a></li>
+                <li><a href="mm-business-crypto.html">MM Business / Crypto Project Contact</a></li>
+                <li><a href="support.html">Support Modmedia/$Snowdn</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <section class="hero-section">
+            <div class="hero-image">
+                <img src="assets/kaspa.jpg" alt="Kaspa Image" class="hero-kaspa-image">
+                <div class="hero-text">
+                    <h1>$SNOWDN NFTS</h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- NFT Images Section -->
+        <section class="nft-section">
+            <h2>Featured NFTs</h2>
+            <div class="content-grid">
+                <!-- NFT #1 -->
+                <div class="card">
+                    <img src="assets/nft-1-deep-fried-snowdn.jpg" alt="NFT #1: Deep Fried $SNOWDN">
+                    <h3>NFT #1: DEEP FRIED $SNOWDN</h3>
+                    <p>(M E M E A T I C, ULTRA RARE)</p>
+                </div>
+                <!-- NFT #2 -->
+                <div class="card">
+                    <img src="assets/nft-2-king-krak.jpg" alt="NFT #2: King Krak">
+                    <h3>NFT #2: KING KRAK</h3>
+                    <p>(KASPA KRAKEN LISTING EXCLUSIVE kraken NFT)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Details Section -->
+        <section class="details-section">
+            <h2>MORE TO COME!</h2>
+            <p>NFTs AIRDROPPED ON OUR TELEGRAM & X PAGE.<br>ACT QUICK TO DOWNLOAD/SCREENSHOT THEM,<br>THEY SELF DESTRUCT WITHIN 24HRS OR LESS!</p>
+            <p class="note">NOTE: $SNOWDN NFTs Made In-Part with some AI use.</p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <p>Copyright 2025 ModMedia™ / ModMedia Network™ / MMEDIA™ ALL Rights Reserved</p>
+                <div class="social-links">
+                    <a href="https://x.com/ModMediaNow" target="_blank">
+                        <img src="assets/X.jpg" alt="X Logo">
+                    </a>
+                    <a href="https://rumble.com/user/ModMediaNow" target="_blank">
+                        <img src="assets/rumble.png" alt="Rumble Logo">
+                    </a>
+                    <a href="https://bsky.app/profile/modmedianow.com" target="_blank">
+                        <img src="assets/bluesky.jpeg" alt="blue sky">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

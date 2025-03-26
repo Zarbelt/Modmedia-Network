@@ -1,0 +1,830 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+body {
+    display: flex;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); 
+    color: #e0e0e0;
+    overflow-x: hidden;
+}
+
+
+.sidebar {
+    width: 250px;
+    background: linear-gradient(180deg, #0f0c29 0%, #302b63 50%, #24243e 100%); 
+    height: 100vh;
+    position: fixed;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.logo h2 {
+    font-size: 24px;
+    color: #00ffea; 
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(0, 255, 234, 0.5);
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin: 15px 0;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 5px rgba(255, 0, 255, 0.5);
+}
+
+
+.main-content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    padding: 20px;
+}
+
+
+.top-section {
+    background: url('assets/world-map-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 60px 40px;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.top-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0, 255, 234, 0.2), rgba(255, 0, 255, 0.2));
+    z-index: 1;
+}
+
+.top-section h1, .top-section p {
+    position: relative;
+    z-index: 2;
+}
+
+.top-section h1 {
+    font-size: 48px;
+    color: #00ffea;
+    text-shadow: 0 0 15px rgba(0, 255, 234, 0.7);
+    margin-bottom: 10px;
+    animation: glow 2s infinite alternate;
+}
+
+.top-section p {
+    font-size: 20px;
+    color: #ff00ff;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+/* Glow Animation */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px rgba(0, 255, 234, 0.5);
+    }
+    100% {
+        text-shadow: 0 0 20px rgba(0, 255, 234, 1);
+    }
+}
+
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border: 2px solid #00ffea;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    color: #00ffea;
+    text-shadow: 0 0 15px rgba(0, 255, 234, 0.7);
+    animation: glow 2s infinite alternate;
+}
+
+.hero-text .subtitle {
+    font-size: 18px;
+    color: #e0e0e0;
+    margin-top: 10px;
+    max-width: 600px;
+}
+
+
+.snowden-nfts-hero-image {
+    background: url('assets/kaspa.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: top;
+}
+
+.mainstream-hero-image {
+    background: url('assets/mainstream.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: top;
+}
+
+.feeds-hero-image {
+    background: url('assets/feeds-propaganda-bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: top;
+}
+
+.fair-love-sport-hero-image {
+    background: url('assets/running-track.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: top;
+}
+
+.kaspa-hero-image {
+    background: url('assets/future.png') no-repeat center center;
+    background-size: cover;
+    background-position: top;
+}
+
+.big-tech-hero-image {
+    background: url('assets/image.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: top;
+}
+
+.mm-business-hero-image {
+    background: url('assets/world-ma.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: top;
+}
+
+.support-hero-image {
+    background: url('assets/support.png') no-repeat center center;
+    background-size: cover;
+    background-position: top;
+}
+
+
+.content-section {
+    margin: 40px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+}
+
+.content-section h2 {
+    font-size: 36px;
+    color: #00ffea;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(0, 255, 234, 0.5);
+}
+
+.content-section p {
+    font-size: 16px;
+    color: #b0b0b0;
+    line-height: 1.6;
+}
+
+.content-section .content-block p {
+    font-size: 18px;
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.content-section .content-block .publish-date {
+    font-size: 14px;
+    color: #b0b0b0;
+    text-align: right;
+    margin-top: 20px;
+}
+
+/* Submissions Section */
+.submissions {
+    margin: 40px 0;
+}
+
+.submissions h2 {
+    font-size: 36px;
+    color: #00ffea;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(0, 255, 234, 0.5);
+}
+
+
+.new-submissions {
+    margin: 40px 0;
+}
+
+.new-submissions h2 {
+    font-size: 36px;
+    color: #00ffea;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(0, 255, 234, 0.5);
+}
+
+.content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center; 
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    min-width: 280px; 
+    max-width: 400px;
+    width: auto; 
+    display: inline-block; 
+    padding: 15px; 
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 255, 234, 0.3);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #00ffea;
+}
+
+.card h3 {
+    font-size: 20px;
+    padding: 15px 0;
+    color: #e0e0e0;
+}
+
+.card p {
+    padding: 0 0 15px;
+    color: #b0b0b0;
+}
+
+/* Style for Embedded Content */
+.card iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+    border-radius: 10px;
+}
+
+.card .twitter-tweet {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* Video Section */
+.video-section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.video-section h2 {
+    font-size: 32px;
+    color: #ff00ff;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+    margin-bottom: 20px;
+}
+
+.video-container {
+    max-width: 560px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+}
+
+iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+}
+
+/* NFT Section (snowden-nfts.html) */
+.nft-section {
+    margin: 40px 0;
+}
+
+.nft-section .content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+
+.airdrop-section {
+    margin: 40px 0;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+}
+
+.airdrop-section h2 {
+    font-size: 36px;
+    color: #00ffea;
+    text-shadow: 0 0 10px rgba(0, 255, 234, 0.5);
+    margin-bottom: 10px;
+}
+
+.airdrop-section p {
+    font-size: 20px;
+    color: #e0e0e0;
+    line-height: 1.5;
+}
+
+.airdrop-section .note {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin-top: 10px;
+}
+
+
+.eulogy-top-section {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: url('assets/world-ma.jpg') no-repeat center center;
+    background-size: cover;
+    border-bottom: 4px solid #b22222;
+    margin-bottom: 20px;
+}
+
+.eulogy-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.eulogy-title h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 48px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 139, 0.7);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.eulogy-images-section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.eulogy-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.eulogy-images img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 3px solid #b22222;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.eulogy-text-section {
+    margin: 40px 0;
+    padding: 20px;
+    background: #f5f5f5;
+    border-left: 5px solid #00008b;
+    border-radius: 5px;
+}
+
+.eulogy-text-section h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 28px;
+    color: #00008b;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.eulogy-text-section p {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.eulogy-text-section .closing {
+    font-style: italic;
+    font-size: 18px;
+    color: #b22222;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.vimeo-section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 15px;
+    border: 2px solid #00ffea;
+}
+
+.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content-block .video-caption {
+    font-size: 14px;
+    color: #b0b0b0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Cards with Image Section (fair-love-sport.html) */
+.cards-with-image {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.cards-with-image .card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    color: #e0e0e0;
+}
+
+.cards-with-image .card p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.cards-with-image .center-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.cards-with-image .center-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid #00ffea;
+}
+
+.cards-with-image .center-image .image-caption {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin-top: 10px;
+}
+
+.kaspa-chart-section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.chart-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 2px solid #00ffea;
+    overflow: hidden;
+}
+
+.chart-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.chart-container .chart-caption {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin-top: 10px;
+}
+
+
+.image-text-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.content-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.content-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid #00ffea;
+}
+
+.content-block {
+    flex: 2;
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    color: #e0e0e0;
+}
+
+.content-block p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+.content-block .crypto-addresses {
+    list-style: none;
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+.content-block .crypto-addresses li {
+    font-size: 16px;
+    color: #e0e0e0;
+    margin-bottom: 15px;
+    word-break: break-all;
+}
+
+.content-block .crypto-addresses li strong {
+    color: #00ffea;
+    font-weight: 600;
+}
+
+.content-block .crypto-addresses li::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 10px;
+}
+
+
+.content-block ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #e0e0e0;
+}
+
+.content-block ul li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.content-block ul li strong {
+    color: #00ffea;
+}
+
+.content-block .sources {
+    margin-top: 20px;
+}
+
+.content-block .sources h3 {
+    font-size: 24px;
+    color: #00ffea;
+    text-shadow: 0 0 10px rgba(0, 255, 234, 0.5);
+    margin-bottom: 10px;
+}
+
+.content-block .sources ul {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.content-block .sources ul li {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin-bottom: 5px;
+}
+
+.content-block .publish-date {
+    font-size: 14px;
+    color: #b0b0b0;
+    text-align: right;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(180deg, #0f0c29 0%, #302b63 100%);
+    color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #00ffea;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.social-links a {
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+.social-links img {
+    width: 35px;
+    height: 35px;
+    filter: drop-shadow(0 0 5px rgba(0, 255, 234, 0.5));
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 200px;
+        width: calc(100% - 200px);
+    }
+
+    .content-grid {
+        justify-content: center;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-text .subtitle {
+        font-size: 14px;
+        max-width: 90%;
+    }
+
+    .embed-container {
+        padding-bottom: 75%;
+    }
+
+    .cards-with-image {
+        flex-direction: column;
+    }
+
+    .cards-with-image .card,
+    .cards-with-image .center-image {
+        max-width: 100%;
+    }
+
+    .chart-container {
+        max-width: 100%;
+    }
+
+    .image-text-container {
+        flex-direction: column;
+    }
+
+    .content-image,
+    .content-block {
+        max-width: 100%;
+    }
+
+    .content-block .crypto-addresses li {
+        font-size: 14px;
+    }
+
+    .eulogy-title h1 {
+        font-size: 32px;
+    }
+
+    .eulogy-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .eulogy-images img {
+        max-width: 250px;
+    }
+
+    .eulogy-text-section h2 {
+        font-size: 24px;
+    }
+
+    .eulogy-text-section p {
+        font-size: 14px;
+    }
+
+    .content-section .content-block p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .video-container iframe {
+        height: 200px;
+    }
+
+    .top-section h1 {
+        font-size: 32px;
+    }
+
+    .top-section p {
+        font-size: 16px;
+    }
+
+    .card {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .card iframe {
+        height: 200px;
+    }
+}
