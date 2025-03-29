@@ -33,32 +33,42 @@
 
     <!-- Main Content -->
     <div class="main-content">
-        <!-- Hero Image Section-->
-        <section class="hero-section">
-            <div class="hero-image">
-                <img src="assets\rescuesnwdn.jpg" alt="Snowden Hero Image">
-                <div class="hero-text">
-                    <h1>Rescue Snowdn</h1>
+        <!-- Updated Hero Section -->
+        <section class="snowden-hero-section">
+            <div class="hero-image-container">
+                <img src="assets/rescuesnwdn.jpg" alt="Rescue Snowden on Kaspa" class="snowden-hero-image">
+                <div class="hero-text-overlay">
+                    <h1>Rescue Snowdn on Kaspa</h1>
+                    <p class="subtitle">The Premier Cryptocurrency Collectible on Proof-of-Work</p>
                 </div>
             </div>
-        </section>
-
-        <!-- Top Section -->
-        <section class="top-section">
-            <h1>Snowden</h1>
-            <p>Kaspa Price: <span id="kaspa-price">Loading...</span> | $Snowdn Price: <span id="snowdn-price">Loading...</span></p>
-            <div class="embed-container">
-                <!-- Vimeo Embed -->
-                <div class="embed-item">
-                    <iframe src="https://player.vimeo.com/video/123456789" width="100%" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <div class="image-text-container">
+                <!-- Left Side: Prices and Vimeo -->
+                <div class="snowden-left-content">
+                    <!-- Prices -->
+                    <div class="snowden-hero-text">
+                        <p class="crypto-prices">
+                            Kaspa Price: <span id="kaspa-price">$0.064013</span> | $Snowdn Price: <span id="snowdn-price">$0.0134</span>
+                        </p>
+                    </div>
+                    <!-- Vimeo Video -->
+                    <div class="vimeo-section">
+                        <div style="padding:56.25% 0 0 0;position:relative;">
+                            <iframe src="https://player.vimeo.com/video/1044232074?badge=0&autopause=0&player_id=0&app_id=58479" 
+                                    frameborder="0" 
+                                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" 
+                                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                                    title="Snowden- Twelve Years in Exile">
+                            </iframe>
+                        </div>
+                        <script src="https://player.vimeo.com/api/player.js"></script>
+                    </div>
                 </div>
-                <!-- X Post Embed -->
-                <div class="embed-item">
-                    <blockquote class="twitter-tweet">
-                        <p lang="en" dir="ltr">Snowden speaks out on privacy and crypto! 🕵️‍♂️ #Snowden #Crypto</p>
-                        — Rescue snwdn (@rescuesnowdn) <a href="put twitter link here">March 23, 2025</a>
-                    </blockquote>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <!-- Right Side: Image -->
+                <div class="snowden-right-content">
+                    <div class="content-image optional-hero-image">
+                        <img src = "assets/rightimage.png" alt="optional-image">
+                    </div>
                 </div>
             </div>
         </section>
@@ -66,61 +76,137 @@
         <!-- Content Sections -->
         <section class="content-section">
             <!-- Tokenomics -->
-            <div class="content-block">
+            <div class="content-block tokenomics-block">
                 <h2>Tokenomics</h2>
-                <p>Fair Launch- T1 Exchange Hold
-
-
-                    10,200+ Holders
-                    
-                    
-                    
-                    No Venture Capital- We Value Decentralization
-                    
-                    
-                    
-                    Max Supply: 357,350,420- seconds from Snowden exile to KRC-20 Network Release Date (yes, we're a first mover).
-                    
-                    
-                    
-                    Deployment Allocation: 10.7% (37 Million) to be held on Two Hard Wallets ( $SNOWDN Treasury & ModMedia DAO) to be Unmoved or BURNED ONLY until it all goes to a 
-                    
-                    T1 Exchange listing liquidity pool. Represents 11 years since Snowden exile (at time of launch). 
-                    
-                    Rest of Deployment Wallet (1,500,000) to Airdrops,  SNOWDN Swap© Defi DAO Pool, & Other Listings- all to Support T1 Listing. 89.3% Supply Community Mint Only!
-                    
-                    
-                    
-                    Launch team quantity held: PROJECT TEAM will mint only ONE TIME Per Member following launch day, pending further community vote.
-                    
-                    
-                    Ticker: $SNOWDN
-                    
-                    
-                    Token amount per 1 KAS Mint: 42, Snowden's Age in 2025</p>
+                <div class="tokenomics-grid">
+                    <div class="tokenomics-item">
+                        <h3>Fair Launch</h3>
+                        <p>T1 Exchange Hold with 10,200+ Holders</p>
+                    </div>
+                    <div class="tokenomics-item">
+                        <h3>Decentralized</h3>
+                        <p>No Venture Capital – We Value Decentralization</p>
+                    </div>
+                    <div class="tokenomics-item">
+                        <h3>Max Supply</h3>
+                        <p>357,350,420 – Seconds from Snowden Exile to KRC-20 Network Release</p>
+                    </div>
+                    <div class="tokenomics-item">
+                        <h3>Allocation</h3>
+                        <p>10.7% (37M) to Treasury & DAO, 1.5M to Airdrops & Listings, 89.3% Community Mint</p>
+                    </div>
+                    <div class="tokenomics-item">
+                        <h3>Launch Team</h3>
+                        <p>One-Time Mint Per Member Post-Launch, Pending Community Vote</p>
+                    </div>
+                    <div class="tokenomics-item">
+                        <h3>Token Details</h3>
+                        <p>Ticker: $SNOWDN | 42 Tokens per 1 KAS Mint (Snowden’s Age in 2025)</p>
+                    </div>
+                </div>
             </div>
 
-            <!-- Team Image -->
-            <div class="content-block">
+            <!-- Team Section -->
+            <div class="content-block team-block">
                 <h2>Team</h2>
-                <img src="assets/team-image.jpg" alt="Team Image" class="content-image">
-                <p>Meet the team behind $Snowdn. Add team bios and photos here.</p>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="assets/team1.png" alt="Team Member 1">
+                        <h3>Charles Sprain </h3>
+                        <p>Technical Systems Admin & Main DEV</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="assets/team2.png" alt="Team Member 2">
+                        <h3>Dawodu Samuel  </h3>
+                        <p>Marketing/Public Relations</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="assets/team3.png" alt="Team Member 3">
+                        <h3>Afolabi Idris</h3>
+                        <p>Co-Director of Development</p>
+                    </div>
+                </div>
             </div>
 
             <!-- Comic Space -->
-            <div class="content-block">
+            <div class="content-block comic-space">
                 <h2>Comic Space</h2>
-                <p>This section is reserved for $Snowdn-related comics or artwork. Add your comic content here.</p>
+                <div class="comic-gallery">
+                    <div class="comic-item">
+                        <img src="assets/comic1.png" alt="Comic 1">
+                        <p class="comic-caption">Snowden’s Escape – Part 1</p>
+                    </div>
+                    <div class="comic-item">
+                        <img src="assets/comic2.png" alt="Comic 2">
+                        <p class="comic-caption">Snowden’s Roadmap</p>
+                    </div>
+                </div>
+                <p class="comic-note">Submit your $Snowdn-related artwork to be featured here!</p>
+                <p class="comic-note"> HODLers of Multiple Months become Stakeholders in a US Media Company- (ModMedia™), are able to join ModMedia Meetings on X.com, & Get Exclusive Comic Content Drops. 
+
+
+                    -> DEV Team is Working Daily on Incorporating Kaspa Smart Contracts With $SNOWDN SWAP© DEFI Tool <- 
+                    
+                    (MAIN DEV COMMITTED TO WORK 5+ Years on Project!) 
+                    
+                    Our Project is in Beta Development Phase until ~mid 2025. Strategic Liquidity Pool establishing has begun in our $SNOWDN SWAP Defi Tool-
+                    
+                    Then later Pool(s) with our Exchange Partner, Kaspa.com, are planned. (Smart contracts are needed for their DEX pools- Kaspa aims to release them ~Summer 2025); and finally- at least one Tier 1 Exchange Liquidity Pool within ~1-3 years.
+                    
+                    
+                    Whitepaper:
+                    
+                    t.me/RescueSNOWDN/8 
+                    
+                    
+                    Telegram: 
+                    
+                    -165+ User Chat https://t.me/rescuesnow
+                    
+                    *FREE TOP50 ALTCOIN TRADING CALLS in TG*
+                    
+                    -Hub https://t.me/SNOWDNorg/ 
+                    
+                    </p>
             </div>
 
             <!-- $Snowdn Swap DeFi Tool Card -->
-            <div class="content-block">
+            <div class="content-block defi-tool-block">
                 <h2>$Snowdn Swap DeFi Tool</h2>
-                <div class="card">
+                <div class="card defi-card">
                     <h3>$Snowdn Swap DeFi Tool</h3>
-                    <p>Kaspa Price: <span id="kaspa-price-swap">Loading...</span> | $Snowdn Price: <span id="snowdn-price-swap">Loading...</span></p>
-                    <p>Explore the <a href="https://snowdn-swap-defi-tool.com" class="defi-link">$Snowdn Swap DeFi Tool</a> for seamless decentralized finance solutions.</p>
-                    <p>Join our community on Telegram: <a href="https://t.me/snowdncommunity" class="telegram-link">Snowdn Telegram Chat</a></p>
+                    <p class="crypto-prices">Kaspa Price: <span id="kaspa-price-swap">$0.064013</span> | $Snowdn Price: <span id="snowdn-price-swap">$0.0134</span></p>
+                    <p>Explore the <a href="https://swap.snowdn.org" class="defi-link">$Snowdn Swap DeFi Tool</a> for seamless decentralized finance solutions.</p>
+                    <p>Join our community on Telegram: <a href="https://t.me/rescuesnow" class="telegram-link">Snowdn Telegram Chat</a></p>
+                    <button class="connect-wallet-btn">Connect Wallet</button>
+                </div>
+            </div>
+
+            
+            <div class="content-block image-section">
+                <h2>Explore More</h2>
+                <div class="image-gallery">
+                    
+                    <div class="image-item">
+                        <a href="https://x.com/RescueSnowden/status/1836319095651995655" target="_blank">
+                            <img src="assets/snowden-update1.png" alt="Snowden Update 1">
+                        </a>
+                        <p class="image-caption">Follow Snowden on X</p>
+                    </div>
+                    
+                    <div class="image-item">
+                        <a href="https://x.com/RescueSnowden/status/1858585449394208903" target="_blank">
+                            <img src="assets/snowdn-update2.png" alt="ModMedia Update">
+                        </a>
+                        <p class="image-caption">ModMedia Updates on X</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="assets/snowden_update3.png" alt="Snowden in Exile">
+                        <p class="image-caption">Edward Snowden on his Exile: </p>
+                        <p class="image-info">"People look at me now and they think I'm this crazy guy, I'm this extremist or whatever. Some people have a misconception that [I] set out to burn down the NSA," he says. "But that's not what this was about. In many ways, 2013 wasn't about surveillance at all. What it was about was a violation of the Constitution.
+
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>

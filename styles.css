@@ -828,3 +828,333 @@ footer {
         height: 200px;
     }
 }
+.subscribe-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #1e90ff;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 1000; 
+    cursor: pointer; 
+}
+
+.subscribe-btn:hover {
+    background-color: #ff4500;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+/* Snowden Hero Section */
+.snowden-hero-section {
+    margin: 40px 0;
+}
+
+/* Hero Image Container */
+.hero-image-container {
+    position: relative;
+    width: 100%;
+    height: auto; /* Remove fixed height to allow natural aspect ratio */
+    padding-bottom: 56.25%; /* Maintain a 16:9 aspect ratio (adjust as needed) */
+    margin-bottom: 20px;
+}
+
+.snowden-hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure the entire image is visible */
+    border-radius: 15px;
+    border: 2px solid #00ffea;
+    box-shadow: 0 0 20px rgba(0, 255, 234, 0.5);
+}
+
+/* Text Overlay on Hero Image */
+.hero-text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+.hero-text-overlay h1 {
+    font-size: 48px;
+    color: #00ffea;
+    text-shadow: 0 0 15px rgba(0, 255, 234, 0.7);
+    animation: glow 2s infinite alternate;
+    margin-bottom: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.hero-text-overlay .subtitle {
+    font-size: 24px;
+    color: #ff00ff;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.7);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+/* Layout for Prices and Vimeo */
+.snowden-hero-section .image-text-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center; /* Align items vertically centered */
+}
+
+.snowden-left-content {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.snowden-right-content {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.snowden-hero-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.snowden-hero-text .crypto-prices {
+    font-size: 18px;
+    color: #ff00ff;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+    background: linear-gradient(45deg, rgba(0, 255, 234, 0.2), rgba(255, 0, 255, 0.2));
+    padding: 15px 20px;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
+}
+
+.snowden-hero-text .crypto-prices span {
+    font-weight: 600;
+    color: #00ffea;
+    text-shadow: 0 0 5px rgba(0, 255, 234, 0.5);
+}
+
+/* Vimeo Section */
+.snowden-hero-section .vimeo-section {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 255, 234, 0.3);
+}
+
+/* Optional Image on the Right */
+.snowden-right-content .optional-hero-image {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.snowden-right-content .optional-hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid #00ffea;
+}
+
+.snowden-right-content .optional-hero-image .placeholder-text {
+    font-size: 16px;
+    color: #b0b0b0;
+    text-align: center;
+}
+/* Tokenomics Block */
+.tokenomics-block {
+    background: linear-gradient(45deg, rgba(0, 255, 234, 0.1), rgba(255, 0, 255, 0.1));
+    border: 2px solid #00ffea;
+    padding: 30px;
+}
+
+.tokenomics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.tokenomics-item {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.tokenomics-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 255, 234, 0.5);
+}
+
+.tokenomics-item h3 {
+    font-size: 18px;
+    color: #00ffea;
+    margin-bottom: 10px;
+}
+
+.tokenomics-item p {
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+/* Team Block */
+.team-block {
+    text-align: center;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.team-member {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 15px;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 255, 234, 0.5);
+}
+
+.team-member img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #00ffea;
+}
+
+.team-member h3 {
+    font-size: 16px;
+    color: #00ffea;
+    margin: 10px 0 5px;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #b0b0b0;
+}
+
+/* Comic Space */
+.comic-space {
+    text-align: center;
+}
+
+.comic-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.comic-item {
+    width: 200px;
+}
+
+.comic-item img {
+    width: 200%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ff00ff;
+    transition: transform 0.3s ease;
+}
+
+.comic-item img:hover {
+    transform: scale(1.1);
+}
+
+.comic-item .comic-caption {
+    font-size: 14px;
+    color: #e0e0e0;
+    margin-top: 10px;
+}
+
+.comic-note {
+    font-size: 24px;
+    color: #0cf323;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* DeFi Tool Block */
+.defi-tool-block .defi-card {
+    text-align: center;
+    background: linear-gradient(45deg, rgba(0, 255, 234, 0.2), rgba(255, 0, 255, 0.2));
+    border: 2px solid #ff00ff;
+}
+
+.defi-tool-block .crypto-prices {
+    font-size: 16px;
+    color: #ff00ff;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+    margin: 10px 0;
+}
+
+.defi-tool-block .defi-link,
+.defi-tool-block .telegram-link {
+    color: #00ffea;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.defi-tool-block .defi-link:hover,
+.defi-tool-block .telegram-link:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 5px rgba(255, 0, 255, 0.5);
+}
+
+.connect-wallet-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.connect-wallet-btn:hover {
+    background-color: #ff4500;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
